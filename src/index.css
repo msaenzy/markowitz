@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Cormorant Garamond", Georgia, serif;
+  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+
+  --color-cream: #FAF6EF;
+  --color-navy-dark: #1B2340;
+  --color-navy-deep: #0F1A3C;
+  --color-gold: #C9A227;
+}
+
+/* Custom scrollbar and smooth scroll */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+
+::selection {
+  background-color: #c9a227;
+  color: #0f1a3c;
+}
+
+/* Infinite marquee animation for testimonials */
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 35s linear infinite;
+}
+
+.animate-marquee:hover,
+.animate-marquee:focus-within {
+  animation-play-state: paused;
+}
+

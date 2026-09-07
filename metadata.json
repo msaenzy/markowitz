@@ -1,0 +1,6 @@
+{
+  "name": "Clínica Dental Markowitz",
+  "description": "Ortodoncia, Periodoncia y Cirugía Maxilofacial en The Point, Guayaquil. Diagnóstico por escaneo digital 3D y planes de tratamiento a tu medida.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
